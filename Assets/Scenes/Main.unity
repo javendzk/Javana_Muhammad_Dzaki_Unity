@@ -179,6 +179,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b645b4714e94d364ca1880c796ad8d08, type: 3}
+--- !u!1 &1929624170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929624172}
+  - component: {fileID: 1929624171}
+  m_Layer: 0
+  m_Name: EnemyClickSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1929624171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929624170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b1226c83e672bf409be11a5996bd915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyVariants:
+  - {fileID: 6532830368135254347, guid: c674e865f7089cd478fdfb47e74b3b10, type: 3}
+  - {fileID: 834888659594715221, guid: 80eed289278175c41a6bb4a4cf98eb94, type: 3}
+  - {fileID: 3782655521213631752, guid: 26fad5230b0782d48be1e8326e662f72, type: 3}
+  - {fileID: 6312666161240141731, guid: 606cc72db0218db45a17f3fcb5618812, type: 3}
+  selectedVariant: 0
+--- !u!4 &1929624172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929624170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7559912, y: 1.1870838, z: 1.220311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083983775
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +329,7 @@ Transform:
   m_GameObject: {fileID: 2083983775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 3}
+  m_LocalPosition: {x: 0, y: -5, z: 5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -289,5 +339,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2083983778}
   - {fileID: 1200815651}
+  - {fileID: 2083983778}
+  - {fileID: 1929624172}
