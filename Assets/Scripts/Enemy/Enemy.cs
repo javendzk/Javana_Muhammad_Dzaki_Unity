@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private int level;
+    [SerializeField] private int level; 
+    public EnemySpawner enemySpawner;
     
-    public void Initialize(int level)
+    public int GetLevel()
     {
-        this.level = level;
+        return level;
     }
     
-    void Start()
+    void OnDestroy()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (enemySpawner != null)
+        {
+            enemySpawner.OnEnemyKilled();
+        }
     }
 }

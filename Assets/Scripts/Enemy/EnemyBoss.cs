@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBoss : MonoBehaviour
+public class EnemyBoss : Enemy
 {
-    [SerializeField]
-    private float speed = 5f;
+    [SerializeField] private float speed = 5f;
     private Vector2 screenBounds;
     private Vector2 direction;
-    [SerializeField]
-    private Weapon weapon;
+    [SerializeField] private Weapon weapon;
+    
 
     void Start()
     {

@@ -79,6 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b4d0f743e7ae64a80ed1c5e1b0577c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 2
+  enemySpawner: {fileID: 0}
   speed: 4
 --- !u!114 &-6271247359445794667
 MonoBehaviour:
@@ -184,6 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d16c93ce20b4474d9011e4529047ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 2
+  enemySpawner: {fileID: 0}
 --- !u!114 &-4739784477193660212
 MonoBehaviour:
   m_ObjectHideFlags: 0

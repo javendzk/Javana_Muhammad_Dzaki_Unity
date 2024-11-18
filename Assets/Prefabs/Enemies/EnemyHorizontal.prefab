@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d16c93ce20b4474d9011e4529047ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 1
+  enemySpawner: {fileID: 0}
 --- !u!114 &7342225220336188993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065e66d2e31e0af4caf0c9a42ae5fcb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
+  enemySpawner: {fileID: 0}
   speed: 5
 --- !u!114 &6092131551430604003
 MonoBehaviour:

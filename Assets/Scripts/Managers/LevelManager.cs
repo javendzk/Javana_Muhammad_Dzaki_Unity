@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] Animator animator;
+    [SerializeField] Animator animatorRight;
+    [SerializeField] Animator animatorLeft;
 
     void Awake()
     {
-        animator.enabled = false;
+        animatorRight.enabled = false;
+        animatorLeft.enabled = false;
     }
 
     public void LoadScene(string sceneName)
@@ -18,8 +20,14 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator LoadSceneAsync(string sceneName)
     {
-        animator.enabled = true;
-        animator.SetTrigger("Start");
+        animatorRight.Rebind();
+        animatorLeft.Rebind();
+        animatorRight.Update(0f);
+        animatorLeft.Update(0f);
+        animatorRight.enabled = true;
+        animatorLeft.enabled = true;
+        animatorRight.ResetTrigger("Start");
+        animatorLeft.ResetTrigger("Start");
         yield return new WaitForSeconds(1f);        
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
@@ -27,6 +35,12 @@ public class LevelManager : MonoBehaviour
         while (!asyncLoad.isDone)
         {
             yield return null;
+        }
+
+        if (asyncLoad.isDone)
+        {
+            animatorRight.SetBool("Start", true);
+            animatorLeft.SetBool("Start", true);
         }
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EnemyHorizontal : Enemy
 {
-    [SerializeField]
-    private float speed = 5f;
+    [SerializeField] private float speed = 5f;
     private Vector2 screenBounds;
     private Vector2 direction;
 

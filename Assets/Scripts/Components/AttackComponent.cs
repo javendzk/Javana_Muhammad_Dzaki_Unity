@@ -20,6 +20,17 @@ public class AttackComponent : MonoBehaviour
             return;
         }
 
+        Transform highestParent = transform;
+        while (highestParent.parent != null)
+        {
+            highestParent = highestParent.parent;
+            if ((highestParent.CompareTag(other.tag)) && 
+                (highestParent.CompareTag("Player") || highestParent.CompareTag("Enemy")))
+            {
+                return;
+            }
+        }
+
         InvincibilityComponent invincibility = other.GetComponent<InvincibilityComponent>();
         if (invincibility != null)
         {

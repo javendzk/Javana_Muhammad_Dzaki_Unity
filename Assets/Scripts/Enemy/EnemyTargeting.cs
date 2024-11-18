@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTargeting : MonoBehaviour
+public class EnemyTargeting : Enemy
 {
     [SerializeField] private float speed = 5f;
     private Vector2 screenBounds;
@@ -11,7 +11,11 @@ public class EnemyTargeting : MonoBehaviour
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
         Respawn();
     }
 

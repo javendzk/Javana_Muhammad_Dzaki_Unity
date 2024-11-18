@@ -80,6 +80,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e795f4f06cf411448b02a0537bc5e573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 3
+  enemySpawner: {fileID: 0}
   speed: 5
   weapon: {fileID: 853648426442313420}
 --- !u!114 &4843875065121903012
@@ -108,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27adb3645bfe8f448bc5437c6070ce4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 700
+  maxHealth: 150
 --- !u!114 &7683768789586366629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d16c93ce20b4474d9011e4529047ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 3
+  enemySpawner: {fileID: 0}
 --- !u!61 &-2830941884630860293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -321,11 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4381220871677488516, guid: 6cc0b5dbd4124f247bd66b1ce6f13d95, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4381220871677488516, guid: 6cc0b5dbd4124f247bd66b1ce6f13d95, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.219
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4381220871677488516, guid: 6cc0b5dbd4124f247bd66b1ce6f13d95, type: 3}
       propertyPath: m_LocalPosition.z

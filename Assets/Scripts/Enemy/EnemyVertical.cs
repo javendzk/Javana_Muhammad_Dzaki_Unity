@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyVertical : MonoBehaviour
+public class EnemyVertical : Enemy
 {
     [SerializeField] private float speed = 5f;
     private Vector2 screenBounds;

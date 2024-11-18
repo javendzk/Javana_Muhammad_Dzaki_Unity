@@ -6,6 +6,7 @@ public class EnemyClickSpawner : MonoBehaviour
 {
     [SerializeField] private Enemy[] enemyVariants;
     [SerializeField] private int selectedVariant = 0;
+    [SerializeField] private int level;
 
     void Start()
     {
@@ -35,9 +36,7 @@ public class EnemyClickSpawner : MonoBehaviour
     {
         if (selectedVariant < enemyVariants.Length)
         {
-            Instantiate(enemyVariants[selectedVariant]);
+            Enemy enemy = Instantiate(enemyVariants[selectedVariant]);
         }
     }
-
-
 }
