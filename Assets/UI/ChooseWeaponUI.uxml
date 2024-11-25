@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheet.uss?fileID=7433441132597879392&amp;guid=c1d964eeed4f4de4dbff798a9145aec8&amp;type=3#Stylesheet" />
+    <ui:VisualElement style="flex-grow: 1; -unity-text-align: lower-center; flex-direction: column; height: 467px; width: 835px; align-items: center; justify-content: center; align-self: center;">
+        <ui:Label tabindex="-1" text="Choose Your Weapon" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameAlert" style="-unity-font: resource(&apos;Fonts &amp; Materials/PressStart2P-Regular&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); bottom: -15%; font-size: 20px;" />
+        <ui:Label tabindex="-1" text="TEMBAK TIPISS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameTitle" class="normaltext" style="-unity-font: resource(&apos;Fonts &amp; Materials/PressStart2P-Regular&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); bottom: -13%;" />
+    </ui:VisualElement>
+</ui:UXML>

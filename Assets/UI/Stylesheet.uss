@@ -1,0 +1,25 @@
+.bigtext {
+    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -unity-font: resource('Fonts & Materials/PressStart2P-Regular');
+    -unity-font-definition: initial;
+    -unity-text-align: middle-center;
+}
+
+.normaltext {
+    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+    -unity-font: resource('Fonts & Materials/PressStart2P-Regular');
+    -unity-font-definition: initial;
+    -unity-text-align: middle-center;
+}
+
+.smalltext {
+    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+    -unity-font: resource('Fonts & Materials/PressStart2P-Regular');
+    -unity-font-definition: initial;
+    -unity-text-align: middle-center;
+    font-size: 10px;
+}

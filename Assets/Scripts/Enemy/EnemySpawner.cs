@@ -56,7 +56,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (combatManager != null)
         {
-            combatManager.OnEnemyKilled();
+            combatManager.OnEnemyKilled(spawnedEnemy.GetLevel());
         }
     }
 

@@ -7,6 +7,7 @@ public class CombatManager : MonoBehaviour
     [SerializeField] private float waveInterval = 5f;
     public int waveNumber = 0;
     public int totalEnemies = 0;
+    public int score = 0;
 
     private void Start()
     {
@@ -48,8 +49,9 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    public void OnEnemyKilled()
+    public void OnEnemyKilled(int addedScore)
     {
         totalEnemies--;
+        score += addedScore;
     }
 }
